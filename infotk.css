@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #001427;
+}
+.infotk_container{
+    padding: 7rem 1rem 3rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.content{
+   width: 365px;
+}
+.content span{
+    font-size: 34px;
+}
+.a_big{
+    color: hsla(0, 0%, 100%, 1);
+    font-size: 48px;
+    font-weight: 900;
+}
+.third-level-menu{
+    margin-top: 1rem;
+    list-style-type: none;
+}
+.third-level-menu a{
+    color: hsla(0, 0%, 100%, 1);
+    display: grid ;
+    padding-bottom: .75rem;
+    margin-left: 3rem;
+}
+.datee{
+    padding: 10px 10px;
+    border: 3px solid hsla(42, 82%, 75%, 1);
+    border-radius: 10px;
+    background: transparent;
+    color: grey;
+    text-align: center;
+    
+}
+.group_date{
+    display: flex;
+    gap: 1rem;
+}
+.form h1{
+    text-align: center;
+    color: hsla(42, 82%, 75%, 1);
+    font-size: 55px;
+    font-family: "Dancing Script", cursive;
+
+}
+.form p{
+    margin-bottom: 9px;
+    margin-top: 1rem;
+    color: white;
+    font-size: 24px;
+   font-family: "Montserrat", sans-serif;
+    
+}
+input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    color: hsla(42, 82%, 75%, 1);
+    background: transparent;
+    width: 600px;
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    border: 3px solid hsla(42, 82%, 75%, 1);
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 10px 20px;
+}
+.mail{
+}
+.pen{
+    position: absolute;
+}

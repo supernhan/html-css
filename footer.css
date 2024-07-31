@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    padding: 3rem 0 3rem 0;
+    background-color: #1C2A3D;
+    text-align: center;
+    display: grid;
+    row-gap: 1rem;
+}
+.footer_list a{
+    font-size: 14px;
+    color: white;
+    margin-right: 1rem;
+}   
+.footer_social img{
+    margin-left: 1rem;
+}
+
+.footer_end{
+    color: white;
+    font-size: 14px !important;
+    line-height: 1.7rem;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="infotk.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav">
+        <a href="homegomsu.html" class="nav_logo">
+          <img src="img/logolangsom4 1.png" alt="" />
+        </a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="trangchu.html" class="nav_link active">Trang chủ</a>
+            </li>
+            <li class="nav_item">
+              <a href="aboutus.html" class="nav_link active"> Giới Thiệu </a>
+            </li>
+            <li class="nav_item">
+              <a href="contact.html" class="nav_link active">Liên hệ </a>
+            </li>
+            <li class="nav_item">
+              <a href="shop.html" class="nav_link">Cửa hàng</a>
+            </li>
+          </ul>
+          <div class="nav_close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav_actions">
+          <i id="nav-toggle" class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="infotk_container">
+      <div class="content">
+        <a class="a_big" href="#">QUẢN LÍ <br> <span>TÀI KHOẢN</span></a>
+        <ul class="third-level-menu">
+          <li><a href="#">THÔNG TIN TÀI KHOẢN</a></li>
+          <li><a href="#">LIÊN KẾT NGÂN HÀNG</a></li>
+          <li><a href="#">ĐƠN HÀNG CỦA TÔI</a></li>
+        </ul>
+      </div>
+      <div class="form">
+        <h1>THÔNG TIN TÀI KHOẢN</h1>
+        <form action="">
+          <p>Tên khách hàng</p>
+          <input type="text" placeholder="Họ và tên" />
+          <p>Ngày sinh</p>
+          <div class="group_date">
+            <select class="datee" id="selectNumber" name="">
+              <option value="" disabled selected>Ngày</option>
+            </select>
+            <select class="datee" id="selectMonth" name="">
+              <option value="" disabled selected>Tháng</option>
+            </select>
+            <select class="datee" id="selectYear" name="">
+              <option value="" disabled selected>Năm</option>
+            </select>
+        </div>
+            <p>Email</p>
+            <div>
+            <input class="mail" type="mail" placeholder="abc123@abc.com" />
+            <i class="ri-pencil-line"></i>
+            <i class="ri-mail-line"></i>
+            </div>
+            <p>Số Điện Thoại</p>
+            <input class="number" type="number" name="" id="">
+            <img class="pen_number" src="img/pencil-create.png" alt="">
+            <div class="button_form">
+                <button>Hủy</button>
+                <button>Lưu</button>
+            </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="selectnumber.js"></script>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #001427;
+}
+.botra_container {
+  padding: 3rem 3rem 3rem 3rem;
+  text-align: center;
+}
+.botra_container h1 {
+  color: hsla(42, 82%, 75%, 1);
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+}
+.item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.item_big {
+  width: 304px;
+}
+.item_big p {
+  font-size: 24px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.price {
+  margin-top: 1rem;
+  font-size: 24px;
+  font-weight: 700;
+  color: hsla(42, 82%, 75%, 1);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.list_big {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  border-left: none;
+  border-radius: 10px;
+  position: fixed;
+  width: 5.5%;
+  top: 200px;
+  z-index: 1;
+  height: 60%;
+  border-top: 0.75px solid hsla(0, 0%, 100%, 1);
+  border-right: 0.75px solid hsla(0, 0%, 100%, 1);
+  border-bottom: 0.75px solid hsla(0, 0%, 100%, 1);
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.menu_container {
+  font-size: 2rem;
+  color: white;
+  top: 3%;
+  position: absolute;
+  right: 50%;
+  left: 30%;
+  cursor: pointer;
+}
+
+.list_container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2rem;
+  position: fixed;
+  top: 200px;
+  left: -100%;
+  z-index: 1;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  padding: 2rem 2rem;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-top: 0.75px solid hsla(0, 0%, 100%, 1);
+  border-right: 0.75px solid hsla(0, 0%, 100%, 1);
+  border-bottom: 0.75px solid hsla(0, 0%, 100%, 1);
+  border-left: none;
+  border-radius: 10px;
+  transition: left 0.4s;
+}
+.item1 {
+  position: relative;
+}
+
+.product_img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  background: hsla(0, 0%, 37%, 0.7); /* Đặt màu nền và thêm độ mờ */
+  cursor: pointer;
+  display: flex; /* Hiển thị nút tìm kiếm ở trung tâm */
+  justify-content: center;
+  align-items: center;
+}
+
+.item1:hover .overlay {
+  opacity: 1;
+}
+
+.show-list {
+  left: 0;
+}
+.nav_link_list {
+  color: white;
+  font-size: 24px;
+  margin-left: 2rem;
+}
+.nav_item {
+  padding: 12px 24px;
+}
+.action_list {
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: rgba(40, 40, 40, 0.2);
+  color: black;
+  appearance: none;
+  border: 1px solid white;
+}
+input[type="checkbox"]:checked {
+  background-color: blue;
+  /* or whatever styles you want depending on your design */
+  /* be as obvious as possible that it's a checkbox and that it's checked! */
+}
+
+.list_content {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+i {
+  font-size: 2rem;
+  color: white;
+}
+.check_list {
+  margin-top: 2rem;
+}
+.pagination {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.pagination a {
+  color: white;
+  border: 1px solid hsla(42, 82%, 75%, 1);
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.pagination .active {
+  background-color: hsla(
+    42,
+    82%,
+    75%,
+    1
+  ); /* Example background color for the active link */
+  color: black; /* Example text color for the active link */
+}
+.av {
+  border: 0 !important;
+  font-size: 2rem;
+  color: hsla(42, 82%, 75%, 1) !important;
+}
+@media (min-width: 350px) and (max-width: 500px) {
+  .item {
+    grid-template-columns: none;
+    justify-content: center;
+  }
+
+  .list_big {
+    top: 130px;
+    height: 10%;
+    width: 20%;
+  }
+  .menu_container {
+    top: 10px;
+  }
+  .list_container {
+    top: 130px;
+    left: -100%;
+    height: 10%;
+    transition: height 0.4s, transform 0.4s; /* Add transition for height and transform properties */
+  }
+  .show-list {
+    left: 0;
+    height: 100%;
+  }
+  .botra_container h1 {
+    font-size: 33px;
+  }
+  .list_content p {
+    margin-bottom: 2rem;
+    font-size: 21px;
+  }
+  .list_content {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+  .list_big {
+    top: 130px;
+    height: 10%;
+    width: 20%;
+  }
+  .menu_container {
+    top: 10px;
+  }
+  .list_container {
+    top: 130px;
+    left: -100%;
+    height: 10%;
+    transition: height 0.4s, transform 0.4s; /* Add transition for height and transform properties */
+  }
+  .show-list {
+    left: 0;
+    height: 100%;
+  }
+  .item {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1281px) {
+  .list_big {
+    display: none;
+  }
+  .list_container {
+    display: none;
+  }
+  .item {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+}

@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #001427;
+}
+.cart_container {
+  padding: 5rem 2rem 0 1rem;
+}
+.cart_container h1 {
+  font-size: 96px;
+  color: hsla(42, 82%, 75%, 1);
+  font-family: "Dancing Script", cursive;
+}
+.detail_h1,
+span {
+  color: hsla(0, 0%, 100%, 1) !important;
+}
+.detail_h2 {
+  width: 275px;
+  font-size: 22px;
+  color: hsla(0, 0%, 100%, 1);
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.detail_h1 {
+  font-size: 46px !important;
+  font-weight: 700;
+}
+.title_cart-edit {
+  display: flex;
+  width: 100%;
+}
+.title_text {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+}
+
+.container_header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.container_title {
+  color: hsla(42, 82%, 75%, 1);
+  display: flex;
+  width: 85%;
+  font-size: 96px;
+  font-weight: 500;
+}
+.input_container {
+  width: 80%;
+  padding: 56px 0;
+  height: auto;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 40px;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 40px;
+}
+.frame_gird {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gird_cart {
+  display: grid;
+  grid-template-columns: 7% 44% 44%;
+  column-gap: 12px;
+}
+.check_list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#vehicle {
+  width: 32px;
+  height: 32px;
+}
+.frame_img-cart {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.img_cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.title_info {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.info_general {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.frame_position {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.position_fixed {
+  position: fixed;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4d58d;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  bottom: 0;
+  padding: 12px 24px;
+  align-items: center;
+}
+#choose_all {
+  width: 32px;
+  height: 32px;
+}
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: rgba(40, 40, 40, 0.2);
+  color: black;
+  appearance: none;
+  border-radius: 1px;
+  border: 1px solid hsla(42, 82%, 75%, 1);
+}
+input[type="checkbox"]:checked {
+  background-color: white;
+  /* or whatever styles you want depending on your design */
+  /* be as obvious as possible that it's a checkbox and that it's checked! */
+}
+span {
+  font-size: 20px;
+  font-weight: 900;
+}
+.car_content {
+  width: 400px;
+  display: grid;
+  row-gap: 1rem;
+}
+.car_content p {
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+}
+.cart_mini {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cart_group {
+  padding-top: 4rem;
+  padding-right: 3rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3rem;
+  width: 100%;
+  height: 618.93px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-color: hsla(42, 82%, 75%, 1) transparent;
+  scrollbar-width: thin;
+}
+.option_all {
+  width: 100%;
+  padding: 3rem;
+  border-radius: 30px 30px 0 0;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  background-color: hsla(42, 82%, 75%, 1);
+  border-top: 3px solid hsla(209, 100%, 8%, 1);
+  border-right: 3px solid hsla(209, 100%, 8%, 1);
+  border-left: 3px solid hsla(209, 100%, 8%, 1);
+}
+.option_check {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.check_option {
+  width: 41px !important;
+  height: 39px !important;
+  border: 3px solid hsla(209, 100%, 8%, 1) !important;
+  appearance: none;
+  color: transparent !important;
+}
+.label_check {
+  font-size: 36px;
+  font-weight: 600;
+  color: hsla(0, 0%, 0%, 1);
+  font-family: "Montserrat", sans-serif;
+}
+.frame_position {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.position_fixed {
+  position: fixed;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4d58d;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  bottom: 0;
+  padding: 12px 24px;
+  align-items: center;
+}
+#choose_all {
+  width: 32px;
+  height: 32px;
+}
+.choose_all {
+  color: #000;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.sum_cart {
+  color: #000;
+  font-size: 36px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+.contitue-btn {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border: 2px solid #001427;
+  border-radius: 12px;
+}
+span {
+  color: #000;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  color: #000;
+}
+.icon_danhmuc {
+  width: 56px;
+  height: 56px;
+}
+@media (min-width: 350px) and (max-width: 1324px) {
+  .check_option {
+    height: 27px !important;
+  }
+  .tieptuc {
+    padding: 10px 15px;
+  }
+  .userr img {
+    width: 2.5rem;
+  }
+  .cart_container h1 {
+    font-size: 70px;
+    text-align: center;
+  }
+  .cart_container {
+    padding: 5rem 0 0 0;
+  }
+  .cart_group {
+    grid-template-columns: none;
+  }
+  .cart_mini {
+    flex-direction: column;
+    text-align: center;
+  }
+  .car_content {
+    width: 100%;
+  }
+  .detail_h2 {
+    width: 100%;
+  }
+  .option_all {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+  .all_pay {
+    gap: 1rem;
+  }
+  .label_check {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .img_logo {
+    width: 56px;
+    height: 56px;
+  }
+  .input_container {
+    display: block;
+  }
+  .gird_cart {
+    margin-bottom: 24px;
+  }
+  .container_title {
+    text-align: center;
+  }
+  .position_fixed {
+    display: block;
+    text-align: center;
+  }
+  .container_header {
+    margin-bottom: 30%;
+  }
+  .gird_cart {
+    display: block;
+  }
+  .frame_gird {
+    margin-bottom: 64px;
+  }
+  .check_list {
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .img_logo {
+    width: 76px;
+    height: 76px;
+  }
+  .nav_item {
+    font-size: 18px;
+  }
+  .input_container {
+    display: block;
+  }
+  .gird_cart {
+    margin-bottom: 24px;
+  }
+  .icon_danhmuc {
+    display: none;
+  }
+}

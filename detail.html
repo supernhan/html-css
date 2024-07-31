@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="detail.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav">
+        <a href="homegomsu.html" class="nav_logo">
+          <img src="img/logolangsom4 1.png" alt="" />
+        </a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="trangchu.html" class="nav_link active">Trang chủ</a>
+            </li>
+            <li class="nav_item">
+              <a href="aboutus.html" class="nav_link active"> Giới Thiệu </a>
+            </li>
+            <li class="nav_item">
+              <a href="contact.html" class="nav_link active">Liên hệ </a>
+            </li>
+            <li class="nav_item">
+              <a aria-current="page" href="shop.html" class="nav_link"
+                >Cửa hàng</a
+              >
+            </li>
+          </ul>
+          <div class="nav_close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav_actions">
+          <a class="userr" href="profile.html"
+            ><img src="img/user.png" alt=""
+          /></a>
+          <a class="userr" href="cart.html"
+            ><img src="img/cart.png" alt=""
+          /></a>
+          <i id="nav-toggle" class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="detail_group">
+      <div class="detail_product">
+        <div class="bred_crum">
+          <p>Cửa hàng</p>
+          <p>></p>
+          <p>Bộ trà / Cafe</p>
+          <p>></p>
+          <p>Tên sản phẩm</p>
+        </div>
+        <img class="" src="img/Rectangle 72.png" alt="" />
+        <div class="mini_img">
+          <img src="img/Rectangle 73.png" alt="" />
+          <img src="img/Rectangle 74.png" alt="" />
+          <img src="img/Rectangle 75.png" alt="" />
+          <img src="img/Rectangle 76.png" alt="" />
+        </div>
+      </div>
+      <div class="detai_content">
+        <h1 class="detail_h1">Bộ trà 1.3 L - Hoàng Cung - Lạc Hồng</h1>
+        <p>Mã sản phẩm: <span>01134020803</span></p>
+        <p>Thương hiệu: <span>Minh Long I</span></p>
+        <p>Hoa văn: <span>Lạc Hồng</span></p>
+        <div id="pricee" class="pricee">3.730.000 VNĐ</div>
+        <div class="counter_detail">
+          <div>
+            <div class="counter">
+              <p>Số lượng:</p>
+              <span class="down" onClick="decreaseCount(event, this)">-</span>
+              <input type="text" value="1" />
+              <span class="up" onClick="increaseCount(event, this)">+</span>
+            </div>
+          </div>
+
+          <div class="detail_icon">
+            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-shopping-bag-2-line"></i>
+          </div>
+        </div>
+        <div class="star">
+          <p>Đánh Giá:</p>
+          <div class="five_start">
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="decription_product">
+      <div class="decription">
+        <h1>MÔ TẢ SẢN PHẨM</h1>
+        <p class="decription_content">
+          Daisy trắng có thiết kế đơn giản, không cầu kỳ nhưng vẫn giữ được nét
+          sang trọng và thanh lịch hiếm thấy ở những sản phẩm khác. Mỗi chiếc
+          đĩa, tô, chén… đều được tạo hình cân đối, tròn đều, không một vết trầy
+          xước. Sản phẩm được nung ở nhiệt độ cao theo công nghệ của Đức, không
+          chì, camidium, an toàn tuyệt đối cho người sử dụng.
+        </p>
+      </div>
+    </div>
+
+    <div class="info_product">
+      <h1>THÔNG TIN SẢN PHẨM</h1>
+      <table>
+        <tbody>
+          <tr>
+            <td>Chiều dài</td>
+            <td>11,50 cm / 4,53 inch</td>
+          </tr>
+          <tr>
+            <td>Chiều rộng</td>
+            <td>11,50 cm / 4,53 inch</td>
+          </tr>
+          <tr>
+            <td>Chiều cao</td>
+            <td>11,50 cm / 4,53 inch</td>
+          </tr>
+          <tr>
+            <td>Trọng lượng</td>
+            <td>201 gram</td>
+          </tr>
+          <tr>
+            <td>Màu sắc</td>
+            <td>Trắng</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="new_product">
+      <h1>SẢN PHẨM CÙNG THƯƠNG HIỆU</h1>
+      <div class="product_swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product">
+              <img
+                src="img/Rectangle 67.png"
+                alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+              />
+              <p>
+                BỘ CÀ PHÊ 0.8L - SAGO <br />
+                MẪU ĐƠN VÀNG
+              </p>
+              <p class="price">2.230.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <img
+                src="img/Rectangle 68.png"
+                alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+              />
+              <p>
+                BỘ TRÀ 0.7L - JASMINE <br />
+                QUẢ ĐẦU MÙA
+              </p>
+              <p class="price">858.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <img
+                src="img/Rectangle 69.png"
+                alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+              />
+              <p>
+                BỘ CÀ PHÊ 0.8L - SAGO<br />
+                THIÊN TUẾ XANH KHẮC NỔI
+              </p>
+              <p class="price">3.624.500 VNĐ</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <img
+                src="img/Rectangle 70.png"
+                alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+              />
+              <p>
+                BỘ CÀ PHÊ PHIN - CAMELLIA <br />
+                MÀU CÀ PHÊ
+              </p>
+              <p class="price">935.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <img src="img/Rectangle 68.png" alt="" />
+              <p>
+                BỘ CÀ PHÊ 0.8L - SAGO <br />
+                MẪU ĐƠN VÀNG 4
+              </p>
+              <p class="price">2.230.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <img src="img/Rectangle 69.png" alt="" />
+              <p>
+                BỘ CÀ PHÊ 0.8L - SAGO <br />
+                MẪU ĐƠN VÀNG 5
+              </p>
+              <p class="price">2.230.000 VNĐ</p>
+            </div>
+          </div>
+          <!-- Repeat similar structure for other slides -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div class="new_product">
+      <h1>SẢN PHẨM CÙNG DANH MỤC</h1>
+      <div class="product_swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product">
+              <img
+                src="img/Rectangle 67 (1).png"
+                alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+              />
+              <p>BỘ TRÀ - HŨ TRÀ AN NHIÊN</p>
+              <p class="price">1.799.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <img
+                src="img/Rectangle 68 (1).png"
+                alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+              />
+              <p>BÌNH HOA 26CM - SẮC HOA</p>
+              <p class="price">3.498.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <img
+                src="img/Rectangle 69 (1).png"
+                alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+              />
+              <p>
+                BỘ ĐỒ ĂN - CAMELLIA<br />
+                LỘC LẠC
+              </p>
+              <p class="price">1.100.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <img
+                src="img/Rectangle 70 (1).png"
+                alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+              />
+              <p>
+                BỘ TRÀ 0.47L - ANNA <br />
+                AN NHIÊN
+              </p>
+              <p class="price">990.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <img src="img/Rectangle 68.png" alt="" />
+              <p>
+                BỘ CÀ PHÊ 0.8L - SAGO <br />
+                MẪU ĐƠN VÀNG 4
+              </p>
+              <p class="price">2.230.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <img src="img/Rectangle 69.png" alt="" />
+              <p>
+                BỘ CÀ PHÊ 0.8L - SAGO <br />
+                MẪU ĐƠN VÀNG 5
+              </p>
+              <p class="price">2.230.000 VNĐ</p>
+            </div>
+          </div>
+          <!-- Repeat similar structure for other slides -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="new_product">
+        <h1>SẢN PHẨM ĐÃ XEM</h1>
+        <div class="product_swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product">
+                <img
+                  src="img/Rectangle 67.png"
+                  alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+                />
+                <p>
+                  BỘ CÀ PHÊ 0.8L - SAGO <br />
+                  MẪU ĐƠN VÀNG
+                </p>
+                <p class="price">2.230.000 VNĐ</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img
+                  src="img/Rectangle 68.png"
+                  alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+                />
+                <p>
+                  BỘ TRÀ 0.7L - JASMINE <br />
+                  QUẢ ĐẦU MÙA
+                </p>
+                <p class="price">858.000 VNĐ</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img
+                  src="img/Rectangle 69.png"
+                  alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+                />
+                <p>
+                  BỘ CÀ PHÊ 0.8L - SAGO<br />
+                  THIÊN TUẾ XANH KHẮC NỔI
+                </p>
+                <p class="price">3.624.500 VNĐ</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img
+                  src="img/Rectangle 70.png"
+                  alt="Bộ cà phê 0.8L - SAGO mẫu đơn vàng"
+                />
+                <p>
+                  BỘ CÀ PHÊ PHIN - CAMELLIA <br />
+                  MÀU CÀ PHÊ
+                </p>
+                <p class="price">935.000 VNĐ</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img src="img/Rectangle 68.png" alt="" />
+                <p>
+                  BỘ CÀ PHÊ 0.8L - SAGO <br />
+                  MẪU ĐƠN VÀNG 4
+                </p>
+                <p class="price">2.230.000 VNĐ</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img src="img/Rectangle 69.png" alt="" />
+                <p>
+                  BỘ CÀ PHÊ 0.8L - SAGO <br />
+                  MẪU ĐƠN VÀNG 5
+                </p>
+                <p class="price">2.230.000 VNĐ</p>
+              </div>
+            </div>
+            <!-- Repeat similar structure for other slides -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer_logo">
+        <img src="img/logolangsom4 1.png" alt="" />
+      </div>
+      <div class="footer_list">
+        <a href="">Trang chủ</a>
+        <a href="">Giới Thiệu</a>
+        <a href="">Liên hệ</a>
+        <a href="">Cửa hàng</a>
+      </div>
+      <div class="footer_social">
+        <img src="img/instagram.png" alt="" />
+        <img src="img/facebook.png" alt="" />
+        <img src="img/linkedin.png" alt="" />
+        <img src="img/youtube.png" alt="" />
+      </div>
+      <div class="footer_end">
+        <p>©COPYRIGHT SITENAME. ALL RIGHTS RESERVED</p>
+        <p>POWERED by CREATE ECOMMERCE</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="counter.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>

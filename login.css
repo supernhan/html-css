@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #001427;
+}
+
+.register_container {
+  padding: 3rem 0 3rem 0;
+  display: flex;
+  gap: 20rem;
+  justify-content: center;
+}
+.register_container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 72px;
+  color: hsla(42, 82%, 75%, 1);
+  font-family: "Dancing Script", cursive;
+}
+.color_text {
+  color: hsla(42, 82%, 75%, 1);
+}
+.nav_item {
+  padding: 12px 24px;
+}
+.nav_actions {
+  margin-right: 70px;
+}
+.google {
+  border-right: 3px solid hsla(42, 82%, 75%, 1);
+  padding-right: 20px;
+}
+.group_register {
+  justify-content: center;
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+.register_container p {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+i {
+  font-size: 2rem;
+  color: hsla(42, 82%, 75%, 1);
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+}
+.input {
+  position: relative;
+  background: transparent;
+  width: 600px;
+  max-width: 100%;
+  display: flex;
+  border: 3px solid hsla(42, 82%, 75%, 1);
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 10px 20px;
+}
+input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: hsla(42, 82%, 75%, 1);
+}
+.check_list {
+  color: white;
+  font-size: 18px;
+  gap: 2rem;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-bottom: 2rem;
+  display: inline-block;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  display: inline-block;
+  width: 10px !important;
+  height: 39px;
+  cursor: pointer;
+  background: rgba(40, 40, 40, 0.2);
+  color: black;
+  appearance: none;
+  border: 1px solid hsla(42, 82%, 75%, 1);
+}
+input[type="checkbox"]:checked {
+  background-color: white;
+  /* or whatever styles you want depending on your design */
+  /* be as obvious as possible that it's a checkbox and that it's checked! */
+}
+.nut {
+  margin-top: 2rem;
+  text-align: center;
+}
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hoac {
+  text-align: center;
+  margin-top: 3rem;
+}
+.button {
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  background-color: transparent;
+  color: hsla(42, 82%, 75%, 1);
+  border: 1px solid hsla(42, 82%, 75%, 1);
+  padding: 20px 14px;
+  border-radius: 10px;
+  font-family: "Dancing Script", cursive;
+}
+@media (min-width: 350px) and (max-width: 1290px) {
+  .register_container h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .hoac {
+    text-align: center;
+  }
+  .group_form {
+    display: grid;
+  }
+
+  .formdk {
+    display: flex;
+    flex-direction: column;
+  }
+  .userr img {
+    width: 2.5rem;
+  }
+
+  .none {
+    display: none;
+  }
+  .input {
+    width: 100%;
+  }
+  .register_container {
+    padding: 1rem 2rem 1rem 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 900px) {
+  .register_container p {
+    font-size: 17px;
+  }
+}

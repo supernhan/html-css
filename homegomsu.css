@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: hsla(42, 82%, 75%, 1);
+}
+body {
+  background: url(img/geraldine-lewa-N_Z91Evs_oM-unsplash\ 1.png), #001427;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.home_content {
+  margin-top: 5rem;
+  text-align: center;
+}
+.nav_item {
+  padding: 12px 24px;
+}
+.big_content {
+  font-family: "Dancing Script", cursive;
+  font-size: 140px;
+  color: hsla(42, 82%, 75%, 1);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.content {
+  width: 692px;
+  font-size: 14px;
+  color: white;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button_content {
+  font-size: 48px;
+  text-align: center;
+  background: none;
+  margin-top: 1rem;
+  border: 3px solid hsla(42, 82%, 75%, 1);
+  border-radius: 25px;
+  padding: 1.2rem;
+  color: hsla(42, 82%, 75%, 1);
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  .content {
+    width: 100%;
+    font-size: 14px;
+  }
+  .big_content {
+    font-size: 72px;
+  }
+  .button_content {
+    font-size: 30px;
+  }
+  body {
+    background: url(img/geraldine-lewa-N_Z91Evs_oM-unsplash\ 1.png), #001427;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+@media (min-width: 350px) and (max-width: 499px) {
+  .content {
+    width: 100%;
+    font-size: 16px;
+  }
+  .home_content {
+    margin-top: 10rem;
+  }
+  .big_content {
+    font-size: 74px;
+  }
+  .button_content {
+    font-size: 24px;
+  }
+  body {
+    background: url(img/geraldine-lewa-N_Z91Evs_oM-unsplash\ 1.png), #001427;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+}

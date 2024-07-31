@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #011427;
+}
+span {
+  font-size: 24px;
+  font-weight: 800;
+}
+.car_content {
+  width: 400px;
+  display: grid;
+  row-gap: 1rem;
+}
+.car_content p {
+  font-weight: 200;
+  font-size: 24px;
+  color: white;
+}
+.cart_mini {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cart_group {
+  padding-top: 3rem;
+  padding-right: 3rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  width: 60%;
+  height: 618.93px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-color: hsla(42, 82%, 75%, 1) transparent;
+  scrollbar-width: thin;
+}
+.option_all {
+  width: 87%;
+  padding: 3rem;
+  border-radius: 30px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  background-color: hsla(42, 82%, 75%, 1);
+  border: 3px solid hsla(209, 100%, 8%, 1);
+}
+.option_check {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.check_option {
+  width: 41px !important;
+  height: 39px !important;
+  border: 3px solid hsla(209, 100%, 8%, 1) !important;
+  appearance: none;
+  color: transparent !important;
+}
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: rgba(40, 40, 40, 0.2);
+  color: black;
+  appearance: none;
+  border-radius: 1px;
+  border: 1px solid hsla(42, 82%, 75%, 1);
+}
+input[type="checkbox"]:checked {
+  background-color: white;
+  /* or whatever styles you want depending on your design */
+  /* be as obvious as possible that it's a checkbox and that it's checked! */
+}
+.detail_h2 {
+  font-size: 22px;
+  color: hsla(0, 0%, 100%, 1);
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.cart_container h1 {
+  font-size: 96px;
+  color: hsla(42, 82%, 75%, 1);
+  font-family: "Dancing Script", cursive;
+}
+.cart_container {
+  padding: 5rem 0 3rem 10rem;
+}
+.pay_group {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+.pay_h2 {
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 30px;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.pay_mini {
+  width: 382px;
+  display: grid;
+  row-gap: 2rem;
+}
+.pay_mini_input {
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  width: 100%;
+  outline: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: hsla(42, 82%, 75%, 1);
+  border-radius: 10px;
+  background-color: transparent;
+  border: 3px solid hsla(42, 82%, 75%, 1);
+}
+
+.pay_mini_h2 {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  color: hsla(0, 0%, 100%, 1);
+}
+.check_list_pay {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.check_list_pay p {
+  font-size: 24px;
+  font-weight: 400 !important;
+  font-family: "Montserrat", sans-serif;
+  color: hsla(0, 0%, 100%, 1);
+}
+.icon_pay {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.icon_pay_mini {
+  font-size: 3rem;
+  color: hsla(42, 82%, 75%, 1);
+}
+.total {
+  color: hsla(42, 82%, 75%, 1);
+  font-size: 36px;
+  margin-top: 2rem;
+}
+.total span {
+  font-size: 36px;
+  font-weight: 900;
+}
+.nav_item {
+  padding: 12px 24px;
+}
+.pay_button {
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: hsla(42, 82%, 75%, 1);
+  border: 3px solid hsla(42, 82%, 75%, 1);
+  border-radius: 10px;
+  width: 80%;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .userr img {
+    width: 2.5rem;
+  }
+  .cart_container {
+    padding: 5rem 1rem 3rem 1rem;
+  }
+  .pay_group {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .cart_group {
+    width: 100%;
+  }
+  .cart_mini {
+    flex-direction: column;
+  }
+  .car_content {
+    width: 100%;
+  }
+  .total {
+    display: none;
+  }
+  .pay_mini {
+    width: 100%;
+  }
+  .cart_container h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .pay_mini_h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1300px) {
+  .userr img {
+    width: 2.5rem;
+  }
+  .cart_container {
+    padding: 5rem 1rem 3rem 1rem;
+  }
+  .pay_group {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .cart_group {
+    width: 70%;
+  }
+  .cart_mini {
+    flex-direction: column;
+  }
+  .car_content {
+    width: 80%;
+    text-align: center;
+  }
+  .total {
+    display: none;
+  }
+  .pay_mini {
+    width: 100%;
+  }
+  .cart_container h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .pay_mini_h2 {
+    font-size: 30px;
+  }
+}

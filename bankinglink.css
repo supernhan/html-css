@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  margin: 0;
+  padding: 0;
+  color: #f4d58d;
+}
+.mainframe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #001427;
+}
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.nav_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img_logo {
+  width: 96px;
+  height: 96px;
+}
+.nav_menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.nav_list {
+  list-style: none;
+  display: inline-flex;
+}
+.nav_item {
+  color: #f4d58d;
+  padding: 0 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+.nav_icon {
+  display: flex;
+  justify-content: center;
+  column-gap: 32px;
+  cursor: pointer;
+}
+.container_header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.input_container {
+  width: 80%;
+  padding: 40px 0;
+  height: auto;
+  display: grid;
+  column-gap: 48px;
+  grid-template-columns: 40% auto;
+}
+.input_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item_title-larger,
+.item_title-low {
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+.item_title-low {
+  font-size: 48px;
+}
+.item_link,
+.item_items {
+  color: #ffffff;
+  list-style-type: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  padding: 16px 0;
+}
+.item_items {
+  color: #708d81;
+  opacity: 0.8;
+}
+.input_title {
+  font-size: 56px;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.text_infomation {
+  color: #ffffff;
+  padding: 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.input_frame,
+.input_frame-nsx {
+  width: 80%;
+  display: flex;
+  height: auto;
+  border: 3px solid hsla(42, 82%, 75%, 1);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.input_frame-nsx {
+  width: 30%;
+}
+#choose_bank,
+.fullname_input,
+.nsx_input {
+  width: 100%;
+  height: 48px;
+  background: transparent;
+  border-radius: 16px;
+  outline: none;
+  padding: 0px 12px;
+}
+.input_frame-gird,
+.text_frame-gird {
+  display: grid;
+  grid-template-columns: 25% 60%;
+  column-gap: 40px;
+}
+#choose_card {
+  width: 100%;
+  height: 48px;
+  background: transparent;
+  border-radius: 16px;
+  outline: none;
+  padding: 0px 12px;
+  border: 3px solid hsla(42, 82%, 75%, 1);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.input_frame-sotk {
+  width: 80%;
+  display: flex;
+  border: 3px solid hsla(42, 82%, 75%, 1);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.sotk_input {
+  width: 80%;
+  height: 48px;
+  background: transparent;
+  border-radius: 16px;
+  outline: none;
+  padding: 0px 12px;
+}
+.img_icon-genaral {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+.frame_end {
+  margin-top: 36px;
+  width: 80%;
+  display: flex;
+  height: auto;
+  justify-content: end;
+}
+.save_input,
+.cancal_input,
+.change_input {
+  padding: 12px 24px;
+  margin-right: 24px;
+  border-radius: 16px;
+  text-decoration: none;
+  border: 3px solid hsla(42, 82%, 75%, 1);
+}
+.save_input {
+  margin-right: 0;
+}
+.icon_danhmuc {
+  width: 56px;
+  height: 56px;
+}
+@media (max-width: 767px) {
+  .img_container {
+    display: none;
+  }
+  .container_header {
+    display: block;
+  }
+  .input_container {
+    width: 100%;
+    display: block;
+  }
+  .input_frame {
+    width: 100%;
+  }
+  .mainframe {
+    height: 1200px;
+  }
+  .img_logo {
+    width: 56px;
+    height: 56px;
+  }
+  .nav_menu {
+    display: none;
+  }
+  .input_detail {
+    margin-top: 32px;
+  }
+  .input_frame-sotk {
+    width: 100%;
+  }
+  .frame_end {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container_header {
+    display: flex;
+    justify-content: center;
+  }
+  .input_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainframe {
+    height: 1100px;
+  }
+  .input_frame {
+    width: 100%;
+  }
+  .img_logo {
+    width: 76px;
+    height: 76px;
+  }
+  .nav_item {
+    font-size: 18px;
+  }
+  .input_detail {
+    margin-top: 32px;
+    justify-content: center;
+  }
+  .frame_end {
+    width: 100%;
+  }
+  .icon_danhmuc {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .icon_danhmuc {
+    display: none;
+  }
+}
